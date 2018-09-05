@@ -1,27 +1,15 @@
 
-# coding: utf-8
-
-# In[121]:
-
+#Created with the assistance of Madhusudhan Sridhar
+#https://github.com/noobCubed
 
 import os
 import re
-
-
-# In[122]:
-
 
 #insert the required directory here
 os.chdir('F:\TestDrive')
 
 
-# In[137]:
-
-
 lis = os.listdir()
-
-
-# In[138]:
 
 
 for fileName in lis:
