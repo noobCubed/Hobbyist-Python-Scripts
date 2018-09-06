@@ -4,13 +4,17 @@
 
 import os
 import re
+import argparse
+
+parser = argparse.ArgumentParser(description='Rename Music File')
+parser.add_argument('-directory', help=('Given the directory where the music files are present, the program will rename all of them accordingly'))
+
+args = parser.parse_args()
 
 #insert the required directory here
-os.chdir('F:\TestDrive')
-
+os.chdir(args.directory)
 
 lis = os.listdir()
-
 
 for fileName in lis:
     count = 0
